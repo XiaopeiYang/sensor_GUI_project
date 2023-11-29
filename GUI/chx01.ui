@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chx01</class>
+ <widget class="QWidget" name="chx01">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>862</width>
+    <height>402</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CHX01</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/logo/res/logo.png</normaloff>:/logo/res/logo.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Sensor Type:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="ch_sensorType">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>CH_Mode:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="ch_Mode"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>FSR(mm):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="ch_fsr"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Samping Rate(Hz):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="ch_sampingRate"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="download_chx01_settings">
+       <property name="text">
+        <string>Download</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="completeSetup">
+       <property name="text">
+        <string>complete setup</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>threshold setting</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>Threshold upto range(mm)*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>Range index*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>Amplitude</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_27">
+        <property name="text">
+         <string>(After inputting,&quot;
+&quot;press &quot;Enter&quot;)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_26">
+        <property name="text">
+         <string>(Read Only)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="4" column="4">
+         <widget class="QLineEdit" name="ch_amplitude5"/>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLineEdit" name="ch_amplitude1"/>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLineEdit" name="ch_amplitude3"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="ch_threshold1"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4">
+         <widget class="QLineEdit" name="ch_amplitude6"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_25">
+          <property name="text">
+           <string>6</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLineEdit" name="ch_range6"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="ch_range2"/>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="ch_range5"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="ch_threshold6"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="ch_range1"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="ch_threshold3"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLineEdit" name="ch_amplitude2"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="ch_threshold5"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="ch_range4"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_24">
+          <property name="text">
+           <string>5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="ch_threshold4"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="ch_threshold2"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="ch_range3"/>
+        </item>
+        <item row="3" column="4">
+         <widget class="QLineEdit" name="ch_amplitude4"/>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0" colspan="3">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>*Threshold cannot be entered in a field smaller than the previous field.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="3">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>*The range index is automatically generated after the threshold upto range is entered</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

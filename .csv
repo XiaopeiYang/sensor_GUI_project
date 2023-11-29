@@ -1,0 +1,2 @@
+sensorType,ch_Mode,ch_fsr,ch_sampingRate,ch_range1,ch_range2,ch_range3,ch_range4,ch_range5,ch_range6,ch_amplitude1,ch_amplitude2,ch_amplitude3,ch_amplitude4,ch_amplitude5,ch_amplitude6
+CH201_GPRMT,MODE_IDLE,5000,30,26,39,56,79,89,450,5000,2000,800,400,250,175
